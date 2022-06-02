@@ -1,0 +1,285 @@
+/*
+site:     WWW.TBK.FI / ASSETS / CSS / STYLE.css
+target:   GITHUB
+source:   mirror, manual
+style:    FOCUS, landing
+palette:  AR-EB
+
+ver.:     1 @ 2022-06-01
+*/
+
+:root {
+  --colour-primary: #60b4f5;
+  --colour-secondary: #fa918c;
+  --colour-white: #fffaf5;
+  --colour-black: #1e0f00;
+}
+
+h1, h2, h3 {
+  font-family: "Rosario";
+  font-weight: 700;
+  color: var(--colour-black);
+}
+h1 {
+  font-weight: 300;
+  font-size: 24px;
+}
+h2 {
+  font-size: 18px;
+}
+h3 {
+  font-size: 16px;
+}
+
+p {
+  font-family: "Source Sans Pro";
+  font-weight: 400;
+  font-size: 16px;
+
+  color: var(--colour-black)
+}
+em {
+  font-style: italic;
+}
+em-r {
+  color: var(--colour-secondary)
+}
+em-b {
+  color: var(--colour-primary)
+}
+
+/* rosario-300 - latin-ext_latin */
+@font-face {
+  font-family: 'Rosario';
+  font-style: normal;
+  font-weight: 300;
+  src: local(''),
+       url('../fonts/rosario-v26-latin-ext_latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/rosario-v26-latin-ext_latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* rosario-700 - latin-ext_latin */
+@font-face {
+  font-family: 'Rosario';
+  font-style: normal;
+  font-weight: 700;
+  src: local(''),
+       url('../fonts/rosario-v26-latin-ext_latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/rosario-v26-latin-ext_latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* rosario-700italic - latin-ext_latin */
+@font-face {
+  font-family: 'Rosario';
+  font-style: italic;
+  font-weight: 700;
+  src: local(''),
+       url('../fonts/rosario-v26-latin-ext_latin-700italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/rosario-v26-latin-ext_latin-700italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* source-sans-pro-regular - latin-ext_latin */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('../fonts/source-sans-pro-v21-latin-ext_latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/source-sans-pro-v21-latin-ext_latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* source-sans-pro-italic - latin-ext_latin */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: italic;
+  font-weight: 400;
+  src: local(''),
+       url('../fonts/source-sans-pro-v21-latin-ext_latin-italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/source-sans-pro-v21-latin-ext_latin-italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* source-sans-pro-600 - latin-ext_latin */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 600;
+  src: local(''),
+       url('../fonts/source-sans-pro-v21-latin-ext_latin-600.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/source-sans-pro-v21-latin-ext_latin-600.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+a {
+  color: var(--colour-primary);
+  opacity: 1;
+}
+a:link {
+  color: var(--colour-primary);
+}
+a:hover {
+  color: var(--colour-secondary);
+}
+a:visited {
+  color: none;
+}
+
+::selection {
+  color: #FFFFFF;
+  background: var(--colour-secondary);
+}
+::-moz-selection {
+  color: #FFFFFF;
+  background: var(--colour-secondary);
+}
+
+::-webkit-scrollbar-track {
+  background: var(--colour-primary);
+}
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--colour-white);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--colour-secondary);
+}
+
+html {
+  background-color: var(--colour-primary);
+  image-rendering: -webkit-optimize-contrast;
+}
+header {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer & Edge */
+  user-select: none; /* future */
+}
+footer {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer & Edge */
+  user-select: none; /* future */
+}
+
+.viewport{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100vw;
+  height: 100vh;
+}
+.frame {
+  min-width: 300px;
+  width: 75%;
+  max-width: 550px;
+
+  height: auto;
+
+  background-color: rgba(255, 255, 255, 0.50);
+
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.one {
+  margin: 0 auto;
+
+  min-width: 220px;
+  max-width: 500px;
+
+  background-color: var(--colour-white);
+
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.two {
+  margin: 0 auto;
+
+  min-width: 220px;
+  max-width: 500px;
+
+  background-color: var(--colour-white);
+
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 25px;
+  padding-bottom: 50px;
+
+  border-radius: 5px;
+}
+.three {
+  margin: 0 auto;
+  width: auto;
+  height:10px;
+
+  background-color: var(--colour-secondary);
+
+  padding: 5px;
+
+  border-radius: 5px;
+}
+.divider {
+  opacity: 0.00;
+}
+.avatar {
+  width: 85px;
+  border-radius: 5%;
+}
+.signature {
+  float: right;
+  width: 150px;
+  height: 85px;
+}
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 3px dotted var(--colour-secondary);
+}
+
+
+.tooltip .tt-2022-2027 {
+  visibility: hidden;
+  width: 200px;
+  background-color: black;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 4px;
+  padding: 5px;
+
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -100px;
+}
+.tooltip:hover .tt-2022-2027 {
+  visibility: visible;
+}
+
+.tooltip .tt-2020-2022 {
+  visibility: hidden;
+  width: 200px;
+  background-color: black;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 4px;
+  padding: 5px;
+
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -100px;
+}
+.tooltip:hover .tt-2020-2022 {
+  visibility: visible;
+}
