@@ -17,19 +17,24 @@ ver.:     1 @ 2022-06-01
 
 h1, h2, h3 {
   font-family: "Rosario";
-  font-weight: 700;
+  font-weight: 600;
   color: var(--colour-black);
 }
-h1 {
+h4, h5, h6 {
+  font-family: "Rosario";
   font-weight: 300;
+  color: var(--colour-black);
+}
+h1, h4 {
   font-size: 24px;
 }
-h2 {
+h2, h5 {
   font-size: 18px;
 }
-h3 {
+h3, h6 {
   font-size: 16px;
 }
+
 
 p {
   font-family: "Source Sans Pro";
