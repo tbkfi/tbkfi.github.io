@@ -287,8 +287,8 @@ footer {
 }
 .signature {
   float: right;
-  width: 176px;
-  height: 85px;
+  width: 150px;
+  height: 75px;
 }
 .tooltip {
   position: relative;
