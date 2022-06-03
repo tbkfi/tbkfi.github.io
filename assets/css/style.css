@@ -244,9 +244,27 @@ footer {
   padding-left: 25px;
   padding-right: 25px;
   padding-top: 25px;
-  padding-bottom: 50px;
+  padding-bottom: 30px;
 
-  border-radius: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.about {
+  margin: 0 auto;
+
+  min-width: 220px;
+  max-width: 500px;
+
+  background-color: var(--colour-white);
+
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 15px;
+
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+
+  text-align: center;
 }
 .three {
   margin: 0 auto;
