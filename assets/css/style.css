@@ -281,6 +281,7 @@ footer {
   opacity: 0.00;
 }
 .avatar {
+  width: 85px;
   height: 85px;
   border-radius: 5%;
 }
