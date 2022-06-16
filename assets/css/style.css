@@ -293,7 +293,7 @@ footer {
 .tooltip {
   position: relative;
   display: inline-block;
-  border-bottom: 3px dotted var(--colour-secondary);
+  color: var(--colour-secondary);
 }
 
 
